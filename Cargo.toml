@@ -1,0 +1,16 @@
+[package]
+name = "brewnote"
+version = "0.1.0"
+authors = ["Matt Erickson <matt@spideroak.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rocket = "0.4.2"
+chrono = "0.4"
+
+[dependencies.rocket_contrib]
+version = "0.4.2"
+default-features = false
+features = ["json", "handlebars_templates", "helmet", "serve"]
